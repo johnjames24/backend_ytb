@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel --presets es2015 -d lib/ src",
-    "run": "babel --presets es2015 -d lib/ src && node ./lib/index.js"
+    "run": "babel --presets es2015 -d lib/ src && node ./lib/index.js",
+    "start" : "node ./lib/index.js"
   },
   "author": "",
   "license": "ISC",
