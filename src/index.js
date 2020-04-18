@@ -13,7 +13,9 @@ app.get('/yt/:title/:artist', async function(req, res) {
 
 app.get('/ytid/:title/:artist', async function(req, res) {
     var {title, artist} = req.params;
-    res.json(await await Bridge.getYoutubeEqual(decodeURIComponent(title), decodeURIComponent(artist)));
+    res.json({
+        id : await await Bridge.getYoutubeEqual(decodeURIComponent(title), decodeURIComponent(artist))
+    });
 });
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
